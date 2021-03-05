@@ -1,0 +1,18 @@
+spring:
+    mvc:
+        format:
+            date-time: iso
+    # Database
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        password: 1234
+        initialization-mode: always
+spring.jpa:
+    database: POSTGRESQL
+    hibernate.ddl-auto: create-drop
+    show-sql: true
+# Server configuration
+server:
+    port: 8181
